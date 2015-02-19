@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Creative Work Info Core Specification</title>
+
+    <!-- base href="http://creativeworkinfo.org/ns/core" / -->
+
+    <link rel="stylesheet" type="text/css" href="../../include/bootstrap.min.css" />
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1><a href="/">CreativeWorkInfo.org</a></h1>
+
+      <div id="body">
+        <div id="content">
+          <div id="main-content">
+            <div class="block" id="title">
+              <h2>Supplementary metadata</h2>
+              <h3>Creative Work Info</h3>
+            </div>
+
+            <div class="block page">
+              <p>This provides some supplementary metadata properties 
+                used to describe documents, in particular PDFs in XMP
+                packets.</p>
+              <p>URI: <a href="http://www.creativeworkinfo.org/ns/core">http://www.creativeworkinfo.org/ns/core</a></p>
+              <p>Recommended namespace: <strong>cwic</strong></p>
+
+              <h2>Titles and Names</h2>
+
+              <div id="surtitle" about="#surtitle">
+                <h4>surtitle</h4>
+                <h5>Lang Alt</h5>
+                <span>Defines the surtitle (the title excluding the
+                subtitle, if any) of the document. This is the prefix
+                of or equal to the value of dc:title in Dublin
+                Core.</span>
+              </div>
+
+              <div id="subtitle" about="#subtitle">
+                <h4>subtitle</h4>
+                <h5>Lang Alt</h5>
+                <span>Defines the subtitle of the document, if any. This is usually the
+                  suffix of dc:title, but some creators put a version number at the
+                  end of the dc:title value.</span>
+              </div>
+
+              <div id="franchise" about="#franchise">
+                <h4>franchise</h4>
+                <h5>Lang Alt</h5>
+                <span>The name of the franchise for this document, e.g. "Tolkien's
+                  Middle Earth"</span>
+              </div>
+
+              <div id="series" about="#series">
+                <h4>series</h4>
+                <h5>Lang Alt</h5>
+                <span>The name of the series for the document, e.g. "The Lord of the
+                  Rings"</span>
+              </div>
+
+              <h2>Credits and Attribution</h2>
+
+              <div id="shortcreator" about="#shortcreator">
+                <h4>shortcreator</h4>
+                <h5>Text</h5>
+                <span>Abbrieviated name of the creator(s), e.g. "Carrol, L"</span>
+              </div>
+
+              <div id="exclude" about="#exclude">
+                <h4>exclude</h4>
+                <h5>Text</h5>
+                <span>URI pointing to a description of the content
+                which is excluded from the overall license of the
+                document in some fashion.</span>
+              </div>
+
+              <div id="contributor" about="#contributor">
+                <h4>contributor</h4>
+                <h5>Seq of Text</h5>
+                <span>Those who intellectually contributed to this work, e.g. "John
+                  Tenniel, Illustrator; Jessie Wilcox Smith, Illustrator"</span>
+              </div>
+
+              <div id="supporter" about="#supporter">
+                <h4>supporter</h4>
+                <h5>Seq of Text</h5>
+                <span>Those who offered non-intellectual support for this work, e.g.
+                  "Alice Pleasance Liddell, Inspiration; Lenny de Rooy, Layout"</span>
+              </div>
+
+              <div id="contactURI" about="#contactURI">
+                <h4>contactURI</h4>
+                <h5>Text</h5>
+                <span>The URI (mailto: or http:) used to get in touch with those
+                  responsible for the document, e.g. the rights holder(s).</span>
+              </div>
+
+              <div id="publisherURI" about="#publisherURI">
+                <h4>publisherURI</h4>
+                <h5>Text</h5>
+                <span>The URI of the publishing entity, if any, e.g. to its web site.</span>
+              </div>
+
+              <div id="publisherLocality" about="#publisherLocality">
+                <h4>publisherLocality</h4>
+                <h5>Text</h5>
+                <span>Publisher's location (geographically), e.g. "London",
+                  "Westminster, London"</span>
+              </div>
+
+              <h2>Referencing and Ordering</h2>
+
+              <div id="isbn" about="#isbn">
+                <h4>isbn</h4>
+                <h5>Text</h5>
+                <span>The ISBN number of the document, if any.</span>
+              </div>
+
+              <div id="sourceDOI" about="#sourceDOI">
+                <h4>sourceDOI</h4>
+                <h5>Text</h5>
+                <span>The DOI (Digital Object Identifier) for the source of this work 
+                    (if any), as provided by DOI.org registrion agencies such as 
+                    Zenodo.org.</span>
+              </div>
+              
+              <div id="datasetDOI" about="#datasetDOI">
+                <h4>datasetDOI</h4>
+                <h5>Text</h5>
+                <span>The DOI (Digital Object Identifier) for the dataset repository 
+                    associated with this work (if any).</span>
+              </div>
+              
+              <div id="datasetRepositoryURL" about="#datasetRepositoryURL">
+                  <h4>datasetRepositoryURI</h4>
+                  <h5>Text</h5>
+                  <span>The URI to the dataset repository associated with this work 
+                      (if any), such as a .zip file or a source code 
+                      repository.</span>
+              </div>
+
+              <div id="volume" about="#volume">
+                <h4>volume</h4>
+                <h5>Text</h5>
+                <span>The volume number of the document.</span>
+              </div>
+
+              <div id="issue" about="#issue">
+                <h4>issue</h4>
+                <h5>Text</h5>
+                <span>The issue number of the document.</span>
+              </div>
+
+              <div id="version" about="#version">
+                <h4>version</h4>
+                <h5>Text</h5>
+                <span>The version number of the document.</span>
+              </div>
+
+              <div id="originalDocumentID" about="#originalDocumentID">
+                <h4>originalDocumentID</h4>
+                <h5>Text</h5>
+                <span>The document ID of the original document, if any. This property
+                  must be preserved at all times, and must be transferred over into
+                  consecutive exports of the same document. When a document is
+                  derived, this value should be copied into parentDocumentID, and
+                  the document ID of the derivative work should be placed here
+                  instead.</span>
+              </div>
+
+              <div id="parentDocumentID" about="#parentDocumentID">
+                <h4>parentDocumentID</h4>
+                <h5>Text</h5>
+                <span>The document ID of the document from which the original document
+                  was derived, if any.</span>
+              </div>
+              
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
